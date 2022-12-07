@@ -30,7 +30,7 @@ export class App extends Component {
   };
 
   handleFilter = event => {
-    this.setState({ filter: event.target.value });
+    this.setState({ filter: event.target.value.trim().toLocaleLowerCase() });
   };
 
   deleteContact = id => {
